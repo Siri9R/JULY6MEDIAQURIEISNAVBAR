@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <style>body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #eee6e6;
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-links li {
+        margin-left: 20px;
+    }
+    
+    .nav-links a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-links img {
+        height: 20px;
+        width: 20px;
+    }
+    
+    .search-icon a {
+        display: flex;
+        align-items: center;
+    }
+    
+    .search-icon img {
+        height: 20px;
+        width: 20px;
+    }
+    
+    /* Media query for screens up to 768px */
+    @media (max-width: 600px) {
+        .navbar {
+            display: none;
+        }
+    }
+    
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#"><img src="./facebook-svgrepo-com.svg" alt="Facebook"></a></li>
+            <li><a href="#"><img src="./instagram-svgrepo-com.svg" alt="Instagram"></a></li>
+            <li><a href="#"><img src="./snapchat-svgrepo-com.svg" alt="Snapchat"></a></li>
+            
+            <li><a href="#"><img src="./twitter-svgrepo-com.svg" alt="Twitter"></a></li>
+            <li><a href="#"><img src="./linkedin-svgrepo-com.svg" alt="LinkedIn"></a></li>
+        </ul>
+        <div class="search-icon">
+            <a href="#"><img src="./search-svgrepo-com.svg" alt="Search"></a>
+        </div>
+    </nav>
+</body>
+</html>
